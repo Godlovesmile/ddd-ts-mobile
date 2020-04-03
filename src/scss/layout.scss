@@ -1,0 +1,16 @@
+.layout-page {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	user-select: none;
+	background: $background-color;
+	display: flex;
+	flex-direction: column;
+	.layout-page-header {
+		position: relative;
+		flex: 0 0 auto;
+		background: $background-color;
+		z-index: 1000;
+		padding: 60px 16px 40px 16px;
+	}
+}
