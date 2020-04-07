@@ -5,7 +5,7 @@
 				<timer />
 			</div>
 			<div class="layout-page-body"></div>
-			<router-link class="" to="/home/notebook/create">
+			<router-link class="home-create-btn" to="/home/notebook/create">
 				<van-button type="primary" size="normal" icon="plus" round>
 					新建任务集
 				</van-button>
@@ -30,5 +30,11 @@ export default class Home extends Vue {
 .home {
 	position: relative;
 	height: 100%;
+	.home-create-btn {
+		position: fixed;
+		bottom: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 </style>
