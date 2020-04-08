@@ -11,6 +11,9 @@
 				</van-button>
 			</router-link>
 		</div>
+		<transition>
+			<router-view class="above-loaded-page" />
+		</transition>
 	</div>
 </template>
 
@@ -26,7 +29,7 @@ export default class Home extends Vue {
 }
 </script>
 
-<style scoped lang="scss" scoped>
+<style scoped lang="scss">
 .home {
 	position: relative;
 	height: 100%;
